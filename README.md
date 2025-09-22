@@ -1,6 +1,9 @@
 # funtion-search
 A faster and more distinct searching method. Compared with traditional searching methods, this code provides a way to find the index directly through the target value, which greatly increases the searching speed and reduces memory usage. It can be nearly twice as fast as the original binary search when dealing with large datasets.
 
+#contact me:
+2250151292@qq.com
+
 ## 🌟 Core Features
 A faster and more innovative searching method. Compared to traditional search methods, this code provides a way to find indices directly through target values. It significantly reduces search time and memory usage, being nearly twice as fast as the original binary search when dealing with large datasets.
 
@@ -15,10 +18,14 @@ This method is suitable for large, sorted datasets with relatively stable data c
 Different datasets can be fitted using functions like lnx, x, e^x-1, or others. For data with exponential growth or growth that later stabilizes, exponential functions can be used for fitting. However, the fitting must reduce △max; otherwise, it will have no effect. For flat data regions, a larger △max will lead to a sharp increase in the number of indices included in the final range, thereby affecting query efficiency. Any fitting function aims to reduce △max. If it cannot reduce △max, there is no need to use nonlinear equations for fitting, as this would only increase the difficulty of calculating the final target interval indices.
 
 ## 🚀 Quick Start
-Download the src folder and copy it into a Java project. Run the classes in sequence (GenerateLinearData -> LinearFitter -> Main) to test directly.
+Download the src folder and copy it into a Java project. Run the classes in sequence (GenerateLinearData -> OptimizedMinimaxLinearFitter -> Main) to test directly.
 
 #介绍
   更快，更不一样的查找方法，相较于传统查找方法，该代码提供了一种直接通过目标值来找到索引的方法。极大减少了查找速度，以及内存占用。比原有二分查找在数据量大的情况下可快近乎一倍。
+
+#联系我
+2250151292@qq.com
+  
 ## 🌟 核心功能
 
   对于一组排序好的数据的查找，目标数如果存在，就会位于这组数据的某个区间，该代码提供了一种通过函数来缩小这个区间，最后在这个区间内进行二分查找或其他查找以达到更快速地查询。
@@ -29,6 +36,6 @@ Download the src folder and copy it into a Java project. Run the classes in sequ
 
 
 ## 🚀 快速开始
-下载该src后复制进一个java项目，按顺序运行类(运行顺序GenerateLinearData -> LinearFitter -> Main)便可直接测试
+下载该src后复制进一个java项目，按顺序运行类(运行顺序GenerateLinearData -> OptimizedMinimaxLinearFitter -> Main)便可直接测试
 
 
